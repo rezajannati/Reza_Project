@@ -1,9 +1,14 @@
 source 'https://rubygems.org'
+ruby '2.1.0'
+
 gem 'font-awesome-less'
 gem 'font-awesome-sass'
+
 gem 'bootstrap-sass'
 gem 'less-rails'
+
 gem 'therubyracer'
+
 gem 'thin'
 
 group :development, :test do
