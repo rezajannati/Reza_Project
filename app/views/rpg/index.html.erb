@@ -1,0 +1,73 @@
+<!DOCTYPEHTML>
+<html lang="en">
+<head>
+	<meta charset = "utf-8">
+	<title>NinjaGold</title>
+</head>
+<body>
+	<div id ='top'>
+		<div id='topbox'><h1>Your Gold:</h1></div>
+		<div id='goldbox'>
+			<p><%= session[:gold] %></p>
+		</div>
+	</div>
+	<div id='rectangle'>
+		<!-- FARM -->
+		<div class='box'>
+			<h1>[Farm]</h1>
+			<h2>(earns 10-20 golds)</h2>
+			<form action="/rpg/farm" method="post">
+				<%= tag(:input,:type =>"hidden",:name => request_forgery_protection_token.to_s,:value => form_authenticity_token)%>
+				<input id="farmbtn" class="butn" type="submit" value="Find Gold!">
+			</form>
+		</div>
+		<!-- CAVE -->
+		<div class='box'>
+			<h1>[Cave]</h1>
+			<h2>(earns 5-10 golds)</h2>
+			<form action="/rpg/cave" method="post">
+				<%= tag(:input,:type =>"hidden",:name => request_forgery_protection_token.to_s,:value => form_authenticity_token)%>
+				<input id="cavebtn" class="butn" type="submit" value="Find Gold!">
+			</form>
+		</div>
+		<!-- HOUSE -->
+		<div class='box'>
+			<h1>[House]</h1>
+			<h2>(earns 2-5 golds)</h2>
+			<form action="/rpg/house" method="post">
+				<%= tag(:input,:type =>"hidden",:name => request_forgery_protection_token.to_s,:value => form_authenticity_token)%>
+				<input id="housebtn" class="butn" type="submit" value="Find Gold!">
+			</form>
+		</div>
+		<!-- CASINO -->
+		<div class='box'>
+			<h1>[Casino!]</h1>
+			<h2>( ± 0-50 golds)</h2>
+			<form action="/rpg/casino" method="post">
+				<%= tag(:input,:type =>"hidden",:name => request_forgery_protection_token.to_s,:value => form_authenticity_token)%>
+				<input id="casinobtn" class="butn" type="submit" value="Find Gold!">
+			</form>
+		</div>
+	</div>
+<!-- ACTIVITY -->
+	<div id = 'activity'>
+		<h3>Activities:</h3>
+		<div id='actbox'>
+			<% session[:activity].each do |i| %>
+			<p> <%= i.html_safe %></p>
+			<% end %>
+		
+		</div>
+		
+		<div id="restart" >
+			<form action="/rpg/restart" method="post">
+				<%= tag(:input,:type =>"hidden",:name => request_forgery_protection_token.to_s,:value => form_authenticity_token)%>
+				<input id="restartbtn" class="butn" type="submit" value="Restart">
+			</form>
+		</div>
+		<br><br>
+		<a class = 'btn btn-primary btn-block'href="/">Go Back</a>
+	</div>
+
+</body>
+</html>

@@ -1,0 +1,106 @@
+// Place all the styles related to the rpg controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+*{
+	font-family: sans-serif;
+	/*border: 1px solid darkgray;*/
+}
+
+#top{
+	width: 900px;
+	background: linear-gradient(#fACC2E,#F4FA58,#fACC2E,#DBA901,#DBA901,#B18904,#61380B);
+	box-shadow:10px 10px 5px #888888;
+	border-radius: 15px;
+}
+#top h1{
+	margin-left: 20px;
+	padding: 10px 0px;
+}
+#goldbox, #topbox{
+	display: inline-block;	
+}
+#topbox{
+	margin-left: 260px;
+}
+#goldbox{
+	border-radius: 10px;
+	margin-top:20px;
+	vertical-align: top;
+	width: 180px;
+	height: 60px;
+	background-color: black;
+	color:#fACC2E;
+}
+#goldbox p{
+	text-align: center;
+	font-size: 25px;
+}
+#rectangle{
+	margin-top: 20px;
+	width: 900px;
+	height: 190px;
+
+}
+/*boxes	*/
+	.box{
+		margin-right: 2px;
+		display: inline-block;
+		width: 220px;
+		height:190px;
+		text-align: center;
+		background: linear-gradient(to right,#61380B,#fACC2E,#B18904,#DBA901,#fACC2E,#F4FA58,#fACC2E,#DBA901,#B18904,#61380B);
+		box-shadow:10px 10px 10px #888888;
+		border-radius: 15px;
+		vertical-align: top;
+	}
+	.butn{
+		font-size: 18px;
+		padding:10px;
+		border-radius: 15px;
+		background: linear-gradient(to right,#61380B,#fACC2E,#B18904,#DBA901,#fACC2E,#F4FA58,#fACC2E,#DBA901,#B18904,#61380B);
+	}
+#activity{
+	width:900px;
+	height:210px;
+	background: linear-gradient(#fACC2E,#fACC2E,#F4FA58,#F4FA58,#fACC2E,#fACC2E,#fACC2E,#DBA901,#DBA901,#B18904,#61380B);
+	box-shadow:10px 10px 5px #888888;
+	border-radius: 15px;
+}
+#activity h3{
+	margin-left: 408px;
+	padding-top:5px;
+}
+#actbox{
+	margin-left:10px ;
+	width: 880px;
+	height: 150px;
+	background-color: black;
+	color: #fACC2E;
+	border-bottom-right-radius: 15px;
+	border-bottom-left-radius: 15px;
+	padding-top: 2px;
+	font-size: 12px;
+	text-align: center;
+	overflow: scroll;
+}
+#actbox p{
+	margin-left: 5px;
+}
+.green{
+	color:lightgreen;
+}
+.red{
+	color:red;
+}
+#restartbtn{
+	margin-left: 412px;
+	margin-top:16px;
+}
+#restart{
+	margin-top: 30px;
+	width: 900px;
+	height: 80px;
+	background: linear-gradient(#fACC2E,#F4FA58,#fACC2E,#DBA901,#DBA901,#B18904,#61380B);
+	box-shadow:10px 10px 5px #888888;
+	border-radius: 15px;
+}

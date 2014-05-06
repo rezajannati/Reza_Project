@@ -1,0 +1,2 @@
+module RpgControllerHelper
+end
