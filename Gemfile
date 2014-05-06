@@ -6,7 +6,7 @@ gem 'less-rails'
 gem 'therubyracer'
 gem 'thin'
 
-group :developement,:test do
+group :developement, :test do
 	gem 'sqlite3'
 end
 
