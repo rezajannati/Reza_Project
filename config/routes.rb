@@ -1,10 +1,4 @@
 RezaProject::Application.routes.draw do
-  get "rpg/index"
-  post"rpg/farm"
-  post"rpg/house"
-  post"rpg/cave"
-  post"rpg/casino"
-  post"rpg/restart"
   root 'starts#index'
   get "starts/index"
   get "starts/show"
